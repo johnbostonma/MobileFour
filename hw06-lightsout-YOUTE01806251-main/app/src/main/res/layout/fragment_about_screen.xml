@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#346E6D"
+    android:padding="5dp"
+    tools:context=".aboutScreen">
+
+    <TextView
+        android:id="@+id/textView_For_aboutME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/About"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_For_aboutMeText"
+        android:layout_width="351dp"
+        android:layout_height="396dp"
+        android:scrollbars="vertical"
+        android:text="@string/AboutMeText"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_For_aboutME" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

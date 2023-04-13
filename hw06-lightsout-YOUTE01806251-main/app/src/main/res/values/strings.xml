@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">LightsOut</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="New_game">New game</string>
+    <string name="GameBoard">Game Board</string>
+    <string name="help">help</string>
+    <string name="moveAmount">Move Count:</string>
+    <string name="moveAmountNumber">0</string>
+    <string name="help_screen">What is LIGHT OUT GAME</string>
+    <string name="Game_over">You Won</string>
+    <string name="settings">settings</string>
+    <string name="red">red</string>
+    <string name="Welcome">Welcome</string>
+    <string name="music">Play SoundTrack</string>
+    <string name="Yellow">yellow</string>
+    <string name="changeColor">Change color</string>
+    <string name="green">green</string>
+    <string name="StartOver">StartOver</string>
+    <string name="Tutorial">LightsOut is a puzzle where you are given a grid of cells, or lights, with some dark and others light. You must turn them all off by clicking on the cells. Each click toggles that cell and each of its immediate neighbors.</string>
+    <string name="howTo">All valid LightsOut puzzles can be solved without clicking on any cell twice. This is because clicking on a cell twice is the same as not clicking it at all.</string>
+    <string name="About">About Me</string>
+    <string name="PersonalWeb">Personal website</string>
+    <string name="AboutMeText">My name is John E.Y,I am a software engineer living in Massachusetts,I am currently a student at UML, and I love it,I created this game for people that are at work or in any boring situations</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/gameBoard">
+
+    <fragment
+        android:id="@+id/aboutScreen"
+        android:name="com.example.lightsout.aboutScreen"
+        android:label="@string/About"
+        tools:layout="@layout/fragment_about_screen" >
+        <action
+            android:id="@+id/action_aboutScreen_to_gameBoard"
+            app:destination="@id/gameBoard" />
+        <action
+            android:id="@+id/action_aboutScreen_to_gameOver"
+            app:destination="@id/gameOver" />
+    </fragment>
+    <fragment
+        android:id="@+id/colorSetting"
+        android:name="com.example.lightsout.colorSetting"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_color_setting" >
+        <action
+            android:id="@+id/action_colorSetting_to_gameBoard"
+            app:destination="@id/gameBoard" />
+        <action
+            android:id="@+id/action_colorSetting_to_gameOver"
+            app:destination="@id/gameOver" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameBoard"
+        android:name="com.example.lightsout.gameBoard"
+        android:label="@string/GameBoard"
+        tools:layout="@layout/fragment_game_board" >
+        <action
+            android:id="@+id/action_gameBoard_to_gameOver"
+            app:destination="@id/gameOver" />
+        <action
+            android:id="@+id/action_gameBoard_to_helpscreen"
+            app:destination="@id/helpscreen" />
+        <action
+            android:id="@+id/action_gameBoard_to_aboutScreen"
+            app:destination="@id/aboutScreen" />
+        <action
+            android:id="@+id/action_gameBoard_to_colorSetting"
+            app:destination="@id/colorSetting" />
+        <argument
+            android:name="music"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameOver"
+        android:name="com.example.lightsout.GameOver"
+        android:label="@string/Game_over"
+        tools:layout="@layout/fragment_game_over" >
+        <argument
+            android:name="message"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpscreen"
+        android:name="com.example.lightsout.helpscreen"
+        android:label="@string/help"
+        tools:layout="@layout/fragment_help_screen" >
+        <action
+            android:id="@+id/action_helpscreen_to_gameBoard"
+            app:destination="@id/gameBoard" />
+        <action
+            android:id="@+id/action_helpscreen_to_gameOver"
+            app:destination="@id/gameOver" />
+    </fragment>
+</navigation>

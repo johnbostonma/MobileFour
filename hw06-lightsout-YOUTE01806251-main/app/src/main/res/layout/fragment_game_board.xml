@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#346E6D"
+    android:padding="5dp"
+    tools:context=".gameBoard">
+
+    <Button
+        android:id="@+id/gameBoardButton"
+        android:layout_width="148dp"
+        android:layout_height="41dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/New_game"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22000003"
+        app:shapeAppearanceOverlay="@style/leaf" />
+
+    <TextView
+        android:id="@+id/welcome_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_stoke"
+        android:text="@string/Welcome"
+        android:textColor="@color/red"
+        android:textSize="90sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameBoardButton"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <ImageView
+        android:id="@+id/mario"
+        android:layout_width="204dp"
+        android:layout_height="434dp"
+        android:src="@drawable/mario"
+        app:layout_constraintBottom_toBottomOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textCountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moveAmount"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76" />
+
+    <TextView
+        android:id="@+id/textCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moveAmountNumber"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+       app:layout_constraintTop_toTopOf="@+id/textCountLabel"
+        app:layout_constraintBottom_toBottomOf="@+id/textCountLabel"
+        app:layout_constraintStart_toEndOf="@+id/textCountLabel"
+        android:layout_marginLeft="10dp"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="379dp"
+        android:layout_height="399dp"
+        android:background="#8ad5f0"
+        android:stretchColumns="2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93">
+
+        <TableRow
+            android:id="@+id/tableRowOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/buttonOne"
+                android:layout_width="124dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_button_off"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/buttonTwo"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_button_off"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/buttonThree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_button_off"
+                app:backgroundTint="@null" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/buttonFour"
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_off"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/buttonFive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_off"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/buttonSix"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_off"
+                app:backgroundTint="@null" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowThree"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/buttonSeven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_button_off"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/buttonHeight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_button_off"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/buttonNine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_button_off"
+                app:backgroundTint="@null" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
